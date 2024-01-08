@@ -1,0 +1,24 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+/server/node_modules
+/server/keys
+# dependencies
+/client/connectify/node_modules
+/client/connectify/.pnp
+/client/connectify.pnp.js
+
+# testing
+/client/connectify/coverage
+
+# production
+/client/connectify/build
+
+# misc
+/client/connectify/.DS_Store
+/client/connectify/.env.local
+/client/connectify/.env.development.local
+/client/connectify/.env.test.local
+/client/connectify/.env.production.local
+
+/client/connectify/npm-debug.log*
+/client/connectify/yarn-debug.log*
+/client/connectify/yarn-error.log*
