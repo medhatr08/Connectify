@@ -30,6 +30,7 @@ router.post("/signup", (req, res) => {
                 password: hashedPassword
             })
             user.save().then(user => {
+                console.log(user)
                 res.json({ message: "Registered successfully" })
             }).catch(err => {
                 console.log(err)

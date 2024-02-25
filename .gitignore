@@ -22,3 +22,4 @@
 /client/connectify/npm-debug.log*
 /client/connectify/yarn-debug.log*
 /client/connectify/yarn-error.log*
+/socket/node_modules

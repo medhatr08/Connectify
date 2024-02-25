@@ -20,13 +20,16 @@ router.post("/createPost", requireLogin, (req, res) => {
     if (!pic || !body) {
         return res.status(422).json({ error: "please add all the fields" })
     }
+    
 
     const post = new Post({
         body,
         photo: pic,
         postedBy: req.user,
     })
+    console.log(post)
     post.save().then((result) => {
+        
         return res.status(200).json({ post: result })
     }).catch(err => {
         console.log(err)
@@ -36,6 +39,7 @@ router.post("/createPost", requireLogin, (req, res) => {
 //to get my posts
 router.get("/myposts", requireLogin, (req, res) => {
     Post.find({ postedBy: req.user._id }).populate("postedBy", "_id userName").populate("comments.postedBy","_id userName").then(myposts => {
+        
         res.json(myposts)
     })
 })
@@ -50,6 +54,7 @@ router.put("/like", requireLogin, async (req, res) => {
 
         res.json(result);
     } catch (err) {
+       
         res.status(422).json({ "error": err.message });
     }
 });
