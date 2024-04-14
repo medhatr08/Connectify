@@ -1,0 +1,45 @@
+.signin{
+    /* background-image: url("https://media.istockphoto.com/id/1344724504/photo/user-based-blockchain-futuristic-technology-backgrounds.webp?b=1&s=170667a&w=0&k=20&c=TyjtjWyzpmtZL8G-NaxiyFEN7mEtyVTnEEJ56nXNPYY="); */
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/002/196/245/small_2x/abstract-blue-hexagon-pattern-background-medical-and-science-technology-connection-concept-free-vector.jpg");
+    background-size: cover;
+    flex:1;
+    display: flex;
+ justify-content: center;
+    align-items: center; 
+    
+}
+.loginForm{
+    background-color: #01016529;
+    padding: 30px;
+    border: 1px solid rgb(233, 224, 224);
+    border-radius: 1px;
+}
+.loginlogo{
+    font-size: 45px;
+    font-weight: bold;
+    font-family:ui-serif;
+    color: #9c7aba;
+    
+    padding: 30px;
+     
+    
+ }
+.loginForm2{
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 5px;
+    border: 1px solid rgb(147, 127, 127);
+    border-radius: 1px;
+}
+#login-btn{
+    background-color: rgb(73, 73, 92);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    
+    cursor: pointer;
+    margin-top: 8px;
+}
+
